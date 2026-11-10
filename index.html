@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Wow Fact TV Uploader: about, privacy policy and terms of service.">
+<title>Wow Fact TV Uploader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow reading column; short intro, then three documents (About, Privacy, Terms) reached by anchor links. */
+:root {
+  --bg: #f7f8fb;
+  --surface: #ffffff;
+  --fg: #1b2230;
+  --muted: #5a6577;
+  --line: #dde2ea;
+  --accent: #d1452f;
+  --accent-ink: #ffffff;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12161d; --surface: #1a2029; --fg: #e8ecf2; --muted: #a2adbd;
+    --line: #2c3442; --accent: #ef6a52; --accent-ink: #12161d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12161d; --surface: #1a2029; --fg: #e8ecf2; --muted: #a2adbd;
+  --line: #2c3442; --accent: #ef6a52; --accent-ink: #12161d; color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--fg);
+  font: 16px/1.65 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding-block: 48px 64px; display: flex; flex-direction: column; gap: 40px; }
+header { display: flex; flex-direction: column; gap: 12px; }
+.mark { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.play { width: 26px; height: 18px; border-radius: 5px; background: var(--accent); position: relative; }
+.play::after { content: ""; position: absolute; left: 10px; top: 4px; border-left: 8px solid var(--accent-ink); border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+h1 { font-family: var(--display); font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.1; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 38rem; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { text-decoration: none; color: var(--fg); border: 1px solid var(--line); background: var(--surface); padding: 6px 14px; border-radius: 999px; font-size: 14px; font-weight: 500; }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); outline: none; }
+section { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 16px; }
+h2 { font-family: var(--display); font-size: 1.6rem; margin: 0; padding-top: 24px; border-top: 1px solid var(--line); }
+h3 { font-size: 1rem; margin: 8px 0 0; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2rem; display: flex; flex-direction: column; gap: 6px; }
+a { color: var(--accent); }
+.meta { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.step { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; font-size: 14px; }
+.step b { display: block; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.contact { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+.contact code { font-family: var(--body); font-weight: 600; user-select: all; word-break: break-all; }
+button { font: inherit; font-size: 14px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header>
+    <span class="mark"><span class="play" aria-hidden="true"></span>Wow Fact TV</span>
+    <h1>Wow Fact TV Uploader</h1>
+    <p class="lede">A private publishing tool used by the owner of the Wow Fact TV YouTube channel to upload the channel's own illustrated story videos. It is not offered to the public and serves exactly one channel.</p>
+    <nav aria-label="Page sections">
+      <a href="#about">About</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Service</a>
+      <a href="https://www.youtube.com/@WOWFACTTV-h9x" target="_blank" rel="noopener">Watch on YouTube</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Wow Fact TV publishes short illustrated stories with a good message: friendship, protecting nature, respect for elders and for other people's work. Stories are produced in four languages (Azerbaijani, Turkish, English and Russian). Each video shows its target age, and stories for children and for adults are kept in separate playlists.</p>
+    <p>Channel: <a href="https://www.youtube.com/@WOWFACTTV-h9x" target="_blank" rel="noopener">youtube.com/@WOWFACTTV-h9x</a>.</p>
+    <p>The uploader runs on the channel owner's personal computer in the n8n automation tool. It prepares each video and uses the YouTube Data API to upload it to the owner's own channel.</p>
+    <div class="flow" aria-label="How a video is published">
+      <div class="step"><b>Write</b>A story script is drafted.</div>
+      <div class="step"><b>Produce</b>Narration, illustrations and music are combined into a video.</div>
+      <div class="step"><b>Review</b>The owner receives the video and its title, description and tags.</div>
+      <div class="step"><b>Upload</b>The video is uploaded to the owner's channel via the YouTube Data API.</div>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="meta">Effective date: 10 November 2026</p>
+    <p>This policy explains how Wow Fact TV Uploader ("the app") handles information. The app uses YouTube API Services. By using the app you agree to be bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>. Google's handling of your data is described in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+    <h3>Who uses the app</h3>
+    <p>The app has a single user: the owner of the Wow Fact TV channel. It does not offer sign-up to anyone else and does not access other people's YouTube accounts.</p>
+
+    <h3>Information the app accesses</h3>
+    <ul>
+      <li>Through YouTube API Services, with the owner's permission, the app uploads videos and sets their title, description, tags, privacy status and playlist on the owner's own channel.</li>
+      <li>The app does not read viewers' personal data, comments, subscriber lists or analytics.</li>
+    </ul>
+
+    <h3>How information is stored</h3>
+    <ul>
+      <li>The access token Google issues after the owner grants permission is stored only on the owner's personal computer, inside the local n8n installation. It is not sent to any server operated by the app.</li>
+      <li>Video files and their texts are stored on the owner's computer and on YouTube.</li>
+      <li>The app does not use cookies and does not collect device or location data.</li>
+    </ul>
+
+    <h3>Sharing</h3>
+    <p>The app does not sell, rent or share any information with third parties. Data goes only to YouTube, as needed to upload videos to the owner's channel.</p>
+
+    <h3>Revoking access and deleting data</h3>
+    <ul>
+      <li>Access can be revoked at any time on the <a href="https://myaccount.google.com/connections" target="_blank" rel="noopener">Google account connections page</a> (also reachable at security.google.com/settings/security/permissions).</li>
+      <li>When access is revoked, the stored token stops working and is deleted from the local n8n installation within 7 days. Any data obtained through YouTube API Services is not kept for longer than 30 days unless it is refreshed.</li>
+      <li>Videos already uploaded remain on the channel and can be deleted in YouTube Studio.</li>
+    </ul>
+
+    <h3>Changes</h3>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+  </section>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <p class="meta">Effective date: 10 November 2026</p>
+    <ul>
+      <li>Wow Fact TV Uploader is a personal tool for publishing videos to the Wow Fact TV channel. It is not a public service and is provided without charge.</li>
+      <li>Use of the app is subject to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a> and the <a href="https://developers.google.com/youtube/terms/developer-policies" target="_blank" rel="noopener">YouTube API Services Developer Policies</a>.</li>
+      <li>All uploaded content is original or used with permission, and the owner is responsible for it.</li>
+      <li>The app is provided as is. Access to YouTube features depends on Google's services.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Questions about this app, its privacy policy or its terms:</p>
+    <div class="contact">
+      <code id="email">memimtahan.muellim@gmail.com</code>
+      <button id="copy" type="button">Copy email</button>
+    </div>
+  </section>
+
+  <footer>Wow Fact TV Uploader is an independent tool and is not affiliated with or endorsed by YouTube or Google.</footer>
+</div>
+
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var btn = this, txt = document.getElementById('email').textContent;
+  function done(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy email'; }, 1500); }
+  function fallback(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('email')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; }
+  try { navigator.clipboard.writeText(txt).then(done, fallback); } catch (e) { fallback(); }
+});
+</script>
+
+</body>
+</html>
